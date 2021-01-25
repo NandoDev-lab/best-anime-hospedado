@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <title>Best Anime</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="js/engines.js"></script>
+  <style>
+    *{
+      padding: 0px;
+      margin: 0px;
+      list-style: none;
+      text-decoration: none;
+     
+    }
+    body{
+      background: black;
+    }
+  #footer{
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+ h1,h2,h3,h4,h5,h6{
+  color: #fff;
+}
+p{
+  color: #fff;
+  padding: 0px;
+  margin: 0px;
+}
+
+.img-fluid{
+  position: absolute;
+  z-index: -1;
+}
+.row{
+  margin-top: 200px;
+
+}
+.fakeimg{
+  margin: 0px;
+  padding: 5px;
+  width: 280px;
+  height: 200px;
+  border: 2px solid thistle;
+ 
+}
+#db1{
+  
+  width: 150px;
+  height: 100;
+}
+ 
+
+  
+/* barra de navegação */
+#shenlong{
+  margin-left:80px ;
+    max-width: 200px;
+    max-height: 200px;
+    position: absolute;
+    animation: texto 5s;
+    animation-delay:3s;
+    animation-iteration-count:infinite;
+    z-index: 1;
+ 
+}
+#piscante{
+    margin-top: 150px;
+    margin-left: 80px;
+    display: block;
+    animation: texto 2s;
+    animation-delay:1s ;
+    animation-iteration-count: infinite;
+    color: #fff;
+  
+}
+
+label{
+    position: absolute;
+}
+input[type="checkbox"] {
+   display: none;
+}
+
+.menu{
+    position: absolute;
+    display: block;
+    opacity: 0%;
+    width: 350px;
+    height: 100%;
+    background: rgba(20, 20, 20, 0.3);
+    font-size: 32px;
+    text-align: center;
+   
+}
+
+input[type="checkbox"]:checked~.menu{
+    opacity: 100%;
+}
+input[type="checkbox"]:checked~#shenlong{
+    animation-iteration-count: 1;
+}
+
+.menu li{
+    top: 300px;
+    position: relative;
+    color: #fff;
+    padding-top: 15px;
+}
+
+
+@keyframes texto{
+   0% {
+        opacity: 100%;
+    }
+    
+    10% {
+        opacity: 80%;
+    }
+    20%{
+        opacity: 50%;
+    }
+    30% {
+        opacity: 25%;
+    }
+    40% {
+        opacity: 10%;
+    }
+    50% {
+        opacity: 0%;
+    }
+    60% {
+        opacity: 10%;
+    }
+    70% {
+        opacity: 25%;
+    }
+    80% {
+        opacity: 50%;
+    }
+    90% {
+        opacity: 80%;
+    }
+    100% {
+        opacity: 100%;
+    }
+}
+/*configurações de responsividade media querie tam motog4*/
+@media (max-width:360px) {
+
+}
+
+</style>
+</head>
+<body>
+
+<div class="jumbotron-fluid border border-warning m-0 bg-dark">
+    <div>
+      <input type="checkbox" id="shen" onclick="piscar();">
+      <label  for="shen" onclick="piscar();">
+          <img src="/img/Shenlong.png" id="shenlong">
+          <p id="piscante" onclick="piscar();">Clique para fazer o pedido</p>
+          <Script src="js/engines.js"></Script>
+      </label>
+      <nav class="menu">
+      <ul>
+          <li><a href=""></a>História</a></li>
+          <li><a href=""></a>Noticias</a></li>
+          <li><a href=""></a>Wallpapers</a></li>
+          <li><a href=""></a>Lives</a></li>
+          <li><a href=""></a>Cards</a></li>
+      </ul>
+      </nav>
+    </div>
+    <h1 id="title" class="display-3 text-center p-5" style="color: chocolate; font-family: cursive;">Best Anime</h1> 
+</div>
+
+<img src="img/BG (2).jpg" class="img-fluid">
+
+<div class="container-fluid text-center">    
+ <div class="row mp-0">
+    <div class="col-sm-2 text-center border border-warning mp-0">
+      <h2>Live</h2>
+      <h5>Assista um episódio passando agora<br>em um canal do youtube</h5>
+      <div class="fakeimg"></div>
+      <p>neste episódio</p>
+      <p>breve descrição:</p>
+      <br>
+      <h2>Cards</h2>
+      <h5>Veja Cards de desrições dos seus personagens Favoritos</h5>
+      <div class="fakeimg">Fake Image</div>
+      <p>nome do personagem</p>
+      <p>descrição:</p>
+    </div>
+    <div class="col-sm-8 border border-light text-center mp-0 ">
+      <h3>Aqui vai maximizar o conteudo</h3>
+    </div>
+    <div class="col-sm-2 border border-warning mp-0">
+    <h2>história</h2>
+    <h5>O inicio de tudo:</h5><br>
+    <div><img src="img/DB1.png" id="db1"></div>
+    <p>Saiba quais serão as novidades que você pode esperar...</p><br>
+    <h3>links de Parceiros</h3>
+    <p>Confira aqui os melhores <br>sites de conteúdos</p><br><br>
+    <ul class="nav nav-pills flex-column">
+      <li class="nav-item">
+        <a class="nav-link active" href="#">Active</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Link</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Link</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link disabled" href="#">Disabled</a>
+      </li>
+    </ul>
+    
+   </div>
+  </div>
+</div>
+<div class="jumbotron jumbotron-fluid bg-dark text-center border border-warning" id="footer">
+  <p>&reg Best Anime</p>
+  <h6>Feito para amantes de animes como você</h6>
+</div>
+</body>
+</html>
+
