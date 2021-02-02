@@ -10,21 +10,21 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
   <script src="js/engines.js"></script>
   <style>
-    *{
+*{
       padding: 0px;
       margin: 0px;
       list-style: none;
       text-decoration: none;
      
-    }
-    body{
+}
+body{
       background: black;
-    }
-  #footer{
+}
+#footer{
     margin-top: 0px;
     margin-bottom: 0px;
-  }
- h1,h2,h3,h4,h5,h6{
+}
+h1,h2,h3,h4,h5,h6{
   color: #fff;
 }
 p{
@@ -32,7 +32,6 @@ p{
   padding: 0px;
   margin: 0px;
 }
-
 .img-fluid{
   position: absolute;
   z-index: -1;
@@ -53,10 +52,7 @@ p{
   
   width: 150px;
   height: 100;
-}
- 
-
-  
+} 
 /* barra de navegação */
 #shenlong{
   margin-left:80px ;
@@ -67,7 +63,6 @@ p{
     animation-delay:3s;
     animation-iteration-count:infinite;
     z-index: 2;
- 
 }
 #piscante{
     margin-top: 150px;
@@ -80,14 +75,12 @@ p{
    
   
 }
-
 label{
     position: absolute;
 }
 input[type="checkbox"] {
    display: none;
 }
-
 .menu{
     position: absolute;
     display: block;
@@ -100,14 +93,12 @@ input[type="checkbox"] {
     z-index: 1;
    
 }
-
 input[type="checkbox"]:checked~.menu{
     opacity: 100%;
 }
 input[type="checkbox"]:checked~#shenlong{
     animation-iteration-count: 1;
 }
-
 .menu li{
     top: 300px;
     position: relative;
@@ -118,8 +109,7 @@ input[type="checkbox"]:checked~#shenlong{
 .menu li:hover{
   box-shadow: 0px 0px 10px rgb(248, 252, 2);
 }
-
-
+/* animação*/
 @keyframes texto{
    0% {
         opacity: 100%;
@@ -193,7 +183,9 @@ input[type="checkbox"]:checked~#shenlong{
     <div class="col-sm-2 text-center border border-warning mp-0">
       <h2>Live</h2>
       <h5>Assista um episódio passando agora<br>em um canal do youtube</h5>
-      <div class="fakeimg"></div>
+      <div class="embed-responsive embed-responsive-16by9 border border-light">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/9uLUaNyqPkY" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="z-index: 1;"></iframe>
+      </div >
       <p>neste episódio</p>
       <p>breve descrição:</p>
       <br>
